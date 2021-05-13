@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Pedra Papel Tesoura</title>
+		<meta charset="utf-8">
+
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<script src="js/script.js"></script>
+
+	</head>
+
+	<body>
+
+		<div id="containerPrincipal">
+
+			<div id="containerInterno">
+				<div id="opcoesJogador">
+					<button onclick="escolherJogada.jogadaEscolhida('pedra'); setTimeout(function(){ reiniciarJogo.reloadPagina(); }, 2500)" id="pedra" class="tamanhoFoto"><img src="img/pedra.png"></button>
+
+					<button onclick="escolherJogada.jogadaEscolhida('papel'); setTimeout(function(){ reiniciarJogo.reloadPagina(); }, 2500)" id="papel" class="tamanhoFoto"><img src="img/papel.png"></button>
+
+					<button onclick="escolherJogada.jogadaEscolhida('tesoura'); setTimeout(function(){  reiniciarJogo.reloadPagina(); }, 2500)" id="tesoura" class="tamanhoFoto"><img src="img/tesoura.png"></button>
+
+				</div>
+
+				<div id="jogada">
+					<div>
+						<h1>Jogador</h1>
+						<div id="jogadaJogador">
+							<img id="jogadaEscolhidaJogador">
+						</div>
+
+						<div id="pontuacaoJogador">
+							0
+						</div>
+					</div>
+
+					<p><strong>vs</strong></p>
+
+					<div>
+						<h1>Máquina</h1>
+						<div id="jogadaCPU">
+							<img id="jogadaEscolhidaMaquina">
+						</div>
+
+						<div id="pontuacaoMaquina">
+							0
+						</div>
+					</div>
+				</div>
+
+				<div id="vencedor">
+					Escolha sua jogada
+				</div>
+			</div>
+		</div>
+
+	</body>
+</html>

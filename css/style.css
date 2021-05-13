@@ -1,0 +1,70 @@
+*{
+	padding: 0;
+	margin: 0;
+	font-family: arial, sans-serif;
+}
+
+#containerPrincipal{
+	height: 100vh;
+	width: 100vw;
+	background: gray;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#containerInterno{
+	height: 550px;
+	width: 500px;
+	background: #f1f1f1;
+}
+
+
+#opcoesJogador{
+	margin-top: 15px;
+	display: flex;
+	justify-content: space-around;
+}
+
+#opcoesJogador .tamanhoFoto img{
+	width: 100px;
+}
+
+#opcoesJogador button{
+	cursor: pointer; 
+}
+
+#jogada{
+	margin-top: 60px;
+	display: flex;
+	justify-content: space-around;
+	text-align: center;
+
+}
+
+#jogada p{
+	display: flex;
+	align-self: center;
+	font-size: 3em;
+}
+
+#jogadaJogador, #jogadaCPU{
+	border: 1px solid black;
+	width: 10em;
+	height: 10em;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+}
+
+#pontuacaoJogador, #pontuacaoMaquina{
+	font-size: 2em;
+	margin-top: 10px;
+}
+
+#vencedor{
+	text-align: center;
+	margin-top:30px;
+	font-size: 2.3em;
+}
